@@ -1,0 +1,61 @@
+spring:
+ application:  
+  name: ContabilidadImportarArchivoIDI
+ dsConta04:
+  url: jdbc:sqlserver://SDPEDBS00021\\PREMIUN:1980;DatabaseName=Prem_Conta04
+  username: app_contabilidad_web
+  password: Afpintegra2
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsConta03:
+  url: jdbc:sqlserver://SDPEDBS00021\\PREMIUN:1980;DatabaseName=Prem_Conta03
+  username: app_contabilidad_web
+  password: Afpintegra2
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsPremMain:
+  url: jdbc:sqlserver://SDPEDBS00021\\PREMIUN:1980;DatabaseName=Prem_Main
+  username: app_contabilidad_web
+  password: Afpintegra2
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsCuentasIndividuales:
+  url: jdbc:sqlserver://SDPEDBS00021\\PREMIUN:1980;DatabaseName=CuentasIndividuales
+  username: app_contabilidad_web
+  password: Afpintegra2
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsTesoreria:
+  url: jdbc:sqlserver://SDPEDBS00008\\INSSQLSVRINT01:2080;DatabaseName=TESORERIA
+  username: app_contabilidad_web
+  password: Afpintegra1
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsAdryan:
+  url: jdbc:sqlserver://SDPEDBS00011:1433;DatabaseName=Adryan
+  username: app_contabilidad_web
+  password: Afpintegra1
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ dsContaAS400:
+  url: jdbc:as400://10.219.64.223//INTEGRA1;libraries=MINTDAT,MINTPRO
+  username: SP0049
+  password: DEV1SURA
+  driverClassName: com.ibm.as400.access.AS400JDBCDriver
+ jpa:
+  hibernate:
+   ddl-auto: create
+ 
+management:
+ security: 
+  enabled: false    
+
+eureka:
+  client:
+#   serviceUrl: 
+#      defaultZone: http://localhost:8761/eureka
+   registerWithEureka: false 
+   fetch-registry: false  
+
+server:
+    port: 8083   # HTTP (Tomcat) port  
+
+logging:
+ file: application.log
+
+parametro:
+ periodoYear: periodoAño

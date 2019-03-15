@@ -1,0 +1,12 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfig",
+      "name": "spring.dsPremMain",
+      "sourceMethod": "cobranzasDataSource()",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}

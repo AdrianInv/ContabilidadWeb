@@ -1,0 +1,16 @@
+com\integra\contabilidad\service\ParametriaService.class
+com\integra\contabilidad\dao\ParametriaDAO.class
+com\integra\contabilidad\bean\Periodo.class
+com\integra\contabilidad\dao\sp\ListarFondosSP.class
+com\integra\contabilidad\util\Procedimientos.class
+com\integra\contabilidad\dao\sp\ObtenerEstadoPeriodoSP.class
+com\integra\contabilidad\util\Constantes.class
+META-INF\spring-configuration-metadata.json
+com\integra\contabilidad\dao\sp\ListarFondosSP$1.class
+com\integra\contabilidad\ParametriaMicroserviceApplication.class
+com\integra\contabilidad\controller\ParametriaController.class
+com\integra\contabilidad\dao\sp\ObtenerEstadoPeriodoSP$1.class
+com\integra\contabilidad\dao\impl\ParametriaDAOImpl.class
+com\integra\contabilidad\bean\Fondo.class
+com\integra\contabilidad\service\impl\ParametriaServiceImpl.class
+com\integra\contabilidad\config\DatasourceConfig.class

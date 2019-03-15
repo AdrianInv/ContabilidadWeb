@@ -1,0 +1,18 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfig",
+      "name": "spring.dsConta03",
+      "sourceMethod": "public javax.sql.DataSource utilitariosDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfig",
+      "name": "spring.dsConta04",
+      "sourceMethod": "public javax.sql.DataSource cobranzasDataSource() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}

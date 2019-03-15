@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Contabilidad-Login
+Implementation-Version: 1.0
+Built-By: NP000238
+Implementation-Vendor-Id: com.integra
+Build-Jdk: 1.8.0_60-ea
+Implementation-URL: http://projects.spring.io/spring-boot/Contabilidad
+ -Login/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

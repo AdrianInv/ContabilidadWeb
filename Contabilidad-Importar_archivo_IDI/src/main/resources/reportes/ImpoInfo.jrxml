@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ImpoInfo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7fb31f9d-7def-4706-a04f-854fb246fce9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nombreEmpresa" class="java.lang.String"/>
+	<field name="codigoValidacion" class="java.lang.Integer"/>
+	<field name="numeroRegistro" class="java.lang.Integer"/>
+	<field name="comentarioValidacion" class="java.lang.String"/>
+	<field name="descripcionValidacion" class="java.lang.String"/>
+	<group name="descripcionValidacion">
+		<groupExpression><![CDATA[$F{descripcionValidacion}]]></groupExpression>
+		<groupHeader>
+			<band height="31">
+				<textField>
+					<reportElement x="0" y="0" width="555" height="15" uuid="41136250-7836-44b4-8ea4-4d7aa8978836"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{descripcionValidacion}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="15" width="555" height="1" uuid="89e6ada9-4d0d-44a8-a69b-92b92e4f29d0"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="15" width="55" height="15" uuid="e682d47d-aaf4-44ff-9542-460c2012ac32"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[NUM. REG.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="55" y="15" width="500" height="15" uuid="1cdc616d-7b37-4647-8e1c-b508fc496373"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[   DATO]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="30" width="555" height="1" uuid="1c8d0da1-e5ae-400b-a6ab-73c084ca8cdb"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="7"/>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="111" height="15" uuid="62c95041-674b-4ee5-b8e8-d47915e33268"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="10" width="80" height="15" uuid="96536968-c10f-476d-ba5b-cc0c3075feab"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="474" y="25" width="80" height="15" uuid="aae8ed54-22c3-4fb2-ae84-f0f4caee6c2f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="383" y="10" width="85" height="15" uuid="9e3ce029-afca-4d56-b141-5b5e186c30bc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Página:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="25" width="85" height="15" uuid="7f8bb0ca-ab67-4320-8091-ede497913630"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="47" width="321" height="20" uuid="0f62e524-5a56-4923-b5e0-136205da0570"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VALIDACION DE INFORMACION A IMPORTAR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="55" height="15" uuid="25046afc-654d-4570-ae02-c2868036bf09">
+					<printWhenExpression><![CDATA[new Boolean($F{numeroRegistro}.intValue()!=0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroRegistro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="0" width="495" height="15" uuid="a35bcebf-e298-4838-9a95-b4cf647b1d33"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comentarioValidacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25"/>
+	</pageFooter>
+</jasperReport>

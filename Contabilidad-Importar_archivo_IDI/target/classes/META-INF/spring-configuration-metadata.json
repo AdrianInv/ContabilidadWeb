@@ -1,0 +1,64 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.integra.contabilidad.util.ParametroBean",
+      "name": "parametro",
+      "type": "com.integra.contabilidad.util.ParametroBean"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsAdryan",
+      "sourceMethod": "public javax.sql.DataSource adryanDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsConta03",
+      "sourceMethod": "public javax.sql.DataSource conta03DataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsConta04",
+      "sourceMethod": "public javax.sql.DataSource conta04DataSource() throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException, javax.crypto.NoSuchPaddingException, java.security.InvalidAlgorithmParameterException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsContaAS400",
+      "sourceMethod": "public javax.sql.DataSource contabilidadAS400DataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsCuentasIndividuales",
+      "sourceMethod": "public javax.sql.DataSource cuentasIndividualesDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsPremMain",
+      "sourceMethod": "public javax.sql.DataSource premMainDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.config.DatasourceConfiguration",
+      "name": "spring.dsTesoreria",
+      "sourceMethod": "public javax.sql.DataSource tesoreriaDataSource() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.integra.contabilidad.util.ParametroBean",
+      "name": "parametro.region",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.integra.contabilidad.util.ParametroBean",
+      "name": "parametro.secretname",
+      "type": "java.lang.String"
+    }
+  ]
+}

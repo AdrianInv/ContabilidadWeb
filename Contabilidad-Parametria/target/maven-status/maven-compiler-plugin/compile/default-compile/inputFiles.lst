@@ -1,0 +1,13 @@
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\dao\impl\ParametriaDAOImpl.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\config\DatasourceConfig.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\service\impl\ParametriaServiceImpl.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\service\ParametriaService.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\ParametriaMicroserviceApplication.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\bean\Fondo.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\bean\Periodo.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\dao\sp\ObtenerEstadoPeriodoSP.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\util\Constantes.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\util\Procedimientos.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\dao\ParametriaDAO.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\controller\ParametriaController.java
+D:\Luis\OT's\Contabilidad\Desarrollo MS\workspace-contabilidad-final\Contabilidad-Parametria\src\main\java\com\integra\contabilidad\dao\sp\ListarFondosSP.java

@@ -1,0 +1,31 @@
+spring:
+ application:  
+  name: ContabilidadLogin
+ dsPremMain:
+  url: jdbc:sqlserver://SDPEDBS00021\\PREMIUN:1980;DatabaseName=Prem_Main
+  username: app_contabilidad_web
+  password: Afpintegra2
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+# jpa:
+#  hibernate:
+#   ddl-auto: create
+# cloud:
+#  config:
+#     uri: http://localhost:8888  
+
+eureka:
+  client:
+#   serviceUrl: 
+#      defaultZone: http://localhost:8761/eureka
+   registerWithEureka: false
+   fetch-registry: false   
+
+server:
+    port: 8082   # HTTP (Tomcat) port  
+    
+url:
+ seguridad:
+  servicio: http://sdpeapp00024:9081/WSSeguridad/services/SeguridadImpl.SeguridadImplHttpSoap11Endpoint/
+
+logging:
+ file: application.log
